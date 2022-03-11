@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            font-size: 2rem;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        main{
+            background-color: #F1F5F8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 500px;
+            height: 300px;
+        }
+        button{
+            font-size: 1rem;
+            border:  2px solid black;
+            padding: 5px 15px;
+            cursor: pointer;
+            color: red;
+
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+        }
+        p{
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 500px;
+        }
+        header a {
+            text-decoration: none;
+            color: black;
+        }
+        .active{
+            color: #c90c28;
+        }
+    </style>
+</head>
+<body>
+    
+
+<div class="container">
+
+
+    <header>
+        <a href="#" class="name">Color Flipper</a>
+        <div>
+            <a href="#" id="simple" class="active">Simple   </a>
+            <a href="#" id="hex">Hex</a>
+        </div>
+    </header>
+    <main>
+        <p>Background color <span>#F1F5F8</span></p>
+        <button>Change Color</button>
+    </main>
+
+</div>
+
+<script src="/app.js"></script>
+</body>
+</html>
